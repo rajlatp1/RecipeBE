@@ -5,7 +5,7 @@ const routes = require("./routes")
 const connection = require("./dbConnection")
 
 const server = express()
-server.use(cors({origin: process.env.clientUrl|| "https://lucky-concha-9c5b42.netlify.app/", credentials: true , allowedHeaders: ["Content-Type", "Authorization"]}))
+server.use(cors({origin: process.env.clientUrl|| "https://lucky-concha-9c5b42.netlify.app", credentials: true , allowedHeaders: ["Content-Type", "Authorization"]}))
 server.use(express.json())
 server.use(routes)
 
